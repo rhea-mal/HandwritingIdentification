@@ -3,6 +3,9 @@
 ## 📝 Overview
 HandwritingIdentification is a comprehensive project aimed at exploring and implementing state-of-the-art techniques in handwriting analysis and writer identification. Utilizing the CSAFE Handwriting Database provided by the Center for Applications in Forensic Evidence, this project leverages a dataset comprising contributions from 90 writers, totaling 2430 handwriting samples. Each writer has submitted 27 scanned documents, providing a rich dataset for analysis.
 
+https://github.com/rhea-mal/HandwritingIdentification/assets/70975260/f032f1a1-bbec-4544-8113-41fc80c4b99f
+
+
 ## 📝 Objective
 HandwritingIdentification accurately identifies writers based on their handwriting characteristics. By preserving unique features such as pen stroke irregularities and thickness, we differentiate writers more effectively than existing methods which primarily use RNN classification for soft biometrics classification (Age, gender, and handedness).
 
