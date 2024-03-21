@@ -1,4 +1,4 @@
-# HandwritingIdentification Project README
+# HandwritingIdentification
 
 ## Overview
 HandwritingIdentification is a comprehensive project aimed at exploring and implementing state-of-the-art techniques in handwriting analysis and writer identification. Utilizing the CSAFE Handwriting Database provided by the Center for Applications in Forensic Evidence, this project leverages a dataset comprising contributions from 90 writers, totaling 2430 handwriting samples. Each writer has submitted 27 scanned documents, providing a rich dataset for analysis.
