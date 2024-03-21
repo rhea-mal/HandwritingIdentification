@@ -1,19 +1,19 @@
 # HandwritingIdentification ✍️
 
-## Overview
+## 📝 Overview
 HandwritingIdentification is a comprehensive project aimed at exploring and implementing state-of-the-art techniques in handwriting analysis and writer identification. Utilizing the CSAFE Handwriting Database provided by the Center for Applications in Forensic Evidence, this project leverages a dataset comprising contributions from 90 writers, totaling 2430 handwriting samples. Each writer has submitted 27 scanned documents, providing a rich dataset for analysis.
 
-## Objective
+## 📝 Objective
 HandwritingIdentification accurately identifies writers based on their handwriting characteristics. By preserving unique features such as pen stroke irregularities and thickness, we differentiate writers more effectively than existing methods which primarily use RNN classification for soft biometrics classification (Age, gender, and handedness).
 
-## Preprocessing
+## 📝 Preprocessing
 Preprocessing plays a crucial role in preparing the handwriting samples for feature extraction and analysis. Our preprocessing pipeline includes:
 - **Conversion to Grayscale:** All samples are converted to grayscale to normalize pixel values.
 - **Noise Removal:** Baseline noise is reduced using a 3x3 median filter.
 - **Binarization:** OTSU thresholding is applied for binarization, effectively separating ink from paper.
 - **Skeletonization:** Each document image is skeletonized, preserving essential stroke information while eliminating variations due to pen type or pressure.
 
-## Feature Extraction
+## 📝 Feature Extraction
 Feature extraction is at the heart of our analysis, enabling the capture of character-specific attributes and global document characteristics:
 - **Text Line Irregularity:** Variance in line heights across the document is measured using projection profiles.
 - **Edge Detection (Canny and Sobel):** Identifies character and stroke boundaries.
@@ -24,13 +24,13 @@ Feature extraction is at the heart of our analysis, enabling the capture of char
 - **Histogram of Oriented Gradients (HOG):** Captures shape and orientation of strokes.
 - **Curvature Analysis:** Derives stroke curvature, representing handwriting angularity.
 
-## Machine Learning Models
+## 📝 Classifiers: ML Models + Clustering 
 To classify and identify handwriting, we explored various machine learning models:
 - **K-means Clustering:** Initially applied to group similar handwriting samples.
 - **Hierarchical Clustering:** Tested but found less effective than K-means.
 - **Recurrent Neural Networks (RNN):** The complexity of handwriting identification prompted the need for a more sophisticated approach, leading to the adoption of RNNs for better performance.
 
-## Results
+## 📝 Results 
 The project introduces a custom metric to assess the accuracy of handwriting identification. Our findings include:
 - **Variable Accuracy:** Accuracy varies by corpus, with higher accuracy observed in documents with more content.
 - **Content and Length Impact:** Longer texts correlate with higher identification accuracy, highlighting the importance of content amount for effective analysis.
